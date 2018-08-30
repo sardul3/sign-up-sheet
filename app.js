@@ -2,7 +2,7 @@ var express = require('express');
 var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 
-mongoose.connect('mongodb://localhost/users');
+mongoose.connect('mongodb://<dbuser>:<dbpassword>@ds137862.mlab.com:37862/heroku_bhv0xx5r');
 
 var User = mongoose.model("User", {name: String, email: String});
 
